@@ -29,7 +29,7 @@ import { PwaFeaturesService } from '../../services/pwa-features-servise';
   styleUrl: './auth.css',
 })
 export class Auth {
-  protected readonly alertButtons = signal(['Action']);
+  protected readonly alertButtons = signal(['Закрыть']);
   private readonly pwaService = inject(PwaFeaturesService);
 
   protected login(): void {
