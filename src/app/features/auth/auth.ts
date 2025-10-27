@@ -29,7 +29,15 @@ import { PwaFeaturesService } from '../../services/pwa-features-servise';
   styleUrl: './auth.css',
 })
 export class Auth {
-  protected readonly alertButtons = signal(['Закрыть']);
+  protected readonly alertButtons = signal([
+    {
+      text: 'Закрыть',
+      role: 'cancel',
+      handler: () => {
+        console.log('Alert canceled');
+      },
+    },
+  ]);
   private readonly pwaService = inject(PwaFeaturesService);
 
   protected login(): void {
