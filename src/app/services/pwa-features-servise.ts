@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class PwaFeaturesService {
-  public vibration(time: number): void {
+  public vibration(time: number[]): void {
     navigator.vibrate(time);
   }
 }

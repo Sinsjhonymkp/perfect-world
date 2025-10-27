@@ -18,6 +18,6 @@ export class Auth {
   private readonly pwaService = inject(PwaFeaturesService);
 
   protected vibration(): void {
-    this.pwaService.vibration(200);
+    this.pwaService.vibration([100, 50, 100, 50, 200, 100, 300, 200, 100]);
   }
 }
